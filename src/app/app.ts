@@ -73,15 +73,15 @@ export class App {
   }
 
   createUser(body: any) {
-    return this.httpClient.post('https://localhost:7202/api/CrudOperation/InsertUser', body);
+    return this.httpClient.post('https://ecollect-backend-uqvg.onrender.com/api/CrudOperation/InsertUser', body);
   }
 
   loadUsers() {
-    return this.httpClient.get('https://localhost:7202/api/CrudOperation/GetAllUsers');
+    return this.httpClient.get('https://ecollect-backend-uqvg.onrender.com/api/CrudOperation/GetAllUsers');
   }
 
   deleteUser(id: number) {
-    return this.httpClient.delete(`https://localhost:7202/api/CrudOperation/DeleteUser/${id}`);
+    return this.httpClient.delete(`https://ecollect-backend-uqvg.onrender.com/api/CrudOperation/DeleteUser/${id}`);
   }
 
   checkValidity() {
